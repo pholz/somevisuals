@@ -1,0 +1,28 @@
+<jittershader name="shdrOne">
+	<description>
+	</description>
+	<language name="glsl" version="1.0">
+		<program name="vp" type="vertex" source="sh.passthru.xform.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+
+varying vec2 texcoord0;
+
+// entry point
+void main()
+{
+	// result either blend or mask based on mode
+        float outline = 0.0;
+//        if (texcoord0.x < 0.1 || texcoord0.x > 0.9 || texcoord0.y < 0.1 || texcoord0.y > 0.9)
+//           outline = 1.0;
+        outline = max(0.0, sign(sin(texcoord0.x*20.0*3.14+10.0)));
+
+	gl_FragColor = vec4(outline, 0.0, outline, 1.0);
+
+	// setting the fragment color is a useful means of debugging
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>
