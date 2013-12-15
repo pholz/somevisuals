@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 1
+			"minor" : 1,
+			"revision" : 6,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 443.0, 82.0, 1246.0, 851.0 ],
@@ -31,7 +32,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-67",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -48,7 +49,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-65",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -65,7 +66,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-50",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -82,7 +83,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-49",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -98,7 +99,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-48",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -106,20 +107,6 @@
 					"patching_rect" : [ 95.0, 767.0, 191.5, 23.0 ],
 					"text" : "send spectrum as  1D matrix",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 48.5, 650.0, 60.0, 20.0 ],
-					"text" : "loadbang"
 				}
 
 			}
@@ -155,41 +142,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-118",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 48.5, 680.0, 50.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-116",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.5, 712.727234, 69.0, 18.0 ],
-					"text" : "zoom_x $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-114",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 12.0, 736.727234, 43.0, 20.0 ],
-					"text" : "jit.rota"
+					"patching_rect" : [ 30.5, 727.727234, 114.0, 20.0 ],
+					"text" : "jit.rota @zoom_x 2."
 				}
 
 			}
@@ -398,7 +357,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 380.0, 497.772705, 58.0, 18.0 ],
+					"patching_rect" : [ 380.0, 497.772705, 58.0, 20.0 ],
 					"text" : "metro 10"
 				}
 
@@ -440,7 +399,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 306.0, 101.0, 42.0 ],
+					"patching_rect" : [ 109.0, 306.0, 101.0, 48.0 ],
 					"text" : "pfft~ ph.pfft.modular 128 2"
 				}
 
@@ -757,6 +716,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-32",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -822,6 +782,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-72",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1036,7 +997,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 511.5, 69.0, 212.0, 46.0 ],
-					"text" : "open \"Macintosh HD:/Users/holz/code/somevisuals/assets/soundlab.aiff\""
+					"text" : "open C:/Users/veronikapa/Desktop/soundlab.aif"
 				}
 
 			}
@@ -1068,28 +1029,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-82",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.0, 151.0, 32.5, 18.0 ],
-					"text" : "120"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 11.595187,
 					"id" : "obj-68",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 85.0, 127.0, 56.0, 20.0 ],
-					"text" : "loadbang"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 85.0, 127.0, 83.0, 20.0 ],
+					"text" : "loadmess 120"
 				}
 
 			}
@@ -1114,8 +1061,8 @@
 					"id" : "obj-79",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "list", "list", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "list", "list" ],
 					"patching_rect" : [ 416.0, 315.0, 46.0, 20.0 ],
 					"text" : "bonk~"
 				}
@@ -1235,15 +1182,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-108", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1311,24 +1249,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-114", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-114", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-116", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-116", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-118", 0 ]
 				}
 
 			}
@@ -1818,7 +1738,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-68", 0 ]
@@ -1891,16 +1811,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 94.5, 175.5, 237.0, 175.5 ],
-					"source" : [ "obj-82", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1938,18 +1848,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ph.pfft.modular.maxpat",
-				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/veronikapa/Desktop/git/trunk/maxpat",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bonk~.mxo",
-				"type" : "iLaX"
+				"name" : "bonk~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "fiddle~.mxo",
-				"type" : "iLaX"
+				"name" : "fiddle~.mxe",
+				"type" : "iLaF"
+			}
+, 			{
+				"name" : "jit.pass.mxe",
+				"type" : "iLaF"
 			}
  ]
 	}
