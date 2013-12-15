@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 219.0, 420.0, 1514.0, 962.0 ],
+		"rect" : [ 215.0, 272.0, 1514.0, 962.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -34,8 +34,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1134.0, 179.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 956.5, 49.0, 0.0, 0.0 ]
+					"patching_rect" : [ 1134.0, 179.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -624,7 +623,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 615.0, 401.0, 113.5, 20.0 ],
-					"text" : "kaleido_vp"
+					"text" : "fx_kaleido_vp"
 				}
 
 			}
@@ -1117,7 +1116,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "kaleido_vp.maxpat",
+				"name" : "fx_kaleido_vp.maxpat",
 				"bootpath" : "/Users/veronikapa/Desktop/git/trunk/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
