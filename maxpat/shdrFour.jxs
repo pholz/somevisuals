@@ -19,6 +19,7 @@
      <bind param="vNoiseFactor" program="vp"/>
      <bind param="pitch" program="fp"/>
      <bind param="time" program="vp"/>
+     <bind param="time" program="vp"/>
      <bind param="timeMultiplier" program="vp"/>
      <bind param="pitchEffect" program="fp"/>
      <bind param="tex0" program="fp" />
@@ -123,7 +124,7 @@ void main()
                         finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
                         //  finalColor = finalColor * pow( 2.0*(0.9 - abs(texcoord0.y - 0.5)), 3.0);
                 }
-                else // radial
+                else if (texmode == 2) // radial
                 {
                         r = distance(texcoord0, vec2(0.5, 0.5));
                         xynorm = texcoord0 - vec2(0.5, 0.5);
@@ -134,15 +135,23 @@ void main()
                         if (r > .4)
                                 finalColor = vec4(0.0);
                 }
+                else
+                {
+                    finalColor = texture2D(tex0, texcoord0);
+                    finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
+                    if (sqrt(finalColor.r)/2.0 < distance(texcoord0.y, 0.5))
+                        finalColor *= 0.0;
 
-                if (texmode >= 1)
-                        finalColor.r *= mix(1.0, pitch.x, pitchEffect);
+                }
+
+
 
         }
 
+        finalColor.r *= mix(1.0, pitch.x, pitchEffect);
 
         float rgbsum = finalColor.r * 0.33 + finalColor.g * 0.33 + finalColor.b * 0.33;
-        if (rgbsum < 0.25)
+        if (rgbsum < 0.05)
                 finalColor *= 0.0;
 
         gl_FragColor = finalColor * brightness;
