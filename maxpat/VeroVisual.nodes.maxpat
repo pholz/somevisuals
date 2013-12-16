@@ -7,7 +7,7 @@
 			"revision" : 1
 		}
 ,
-		"rect" : [ 333.0, 346.0, 1514.0, 520.0 ],
+		"rect" : [ 166.0, 358.0, 1514.0, 520.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,50 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 80.0, 735.0, 36.0, 20.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-32",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 219.0, 758.5, 98.0, 32.0 ],
+					"text" : ";\rmax showcursor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 119.0, 758.5, 93.0, 32.0 ],
+					"text" : ";\rmax hidecursor"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"attr" : "erase_color",
 					"displaymode" : 4,
 					"fontname" : "Arial",
@@ -37,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 453.0, 296.0, 21.0 ],
+					"patching_rect" : [ 69.0, 300.0, 296.0, 21.0 ],
 					"text_width" : 95.5
 				}
 
@@ -65,8 +109,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 199.375, 358.763184, 371.0, 20.0 ],
-					"text" : "jit.gl.node VeroVisual @name out-win @dim 1024 1024 @capture 1"
+					"patching_rect" : [ 199.375, 363.0, 357.0, 20.0 ],
+					"text" : "jit.gl.node VeroVisual @name out-win @dim 512 512 @capture 1"
 				}
 
 			}
@@ -678,7 +722,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 512.0, 633.0, 284.0, 21.0 ],
+					"patching_rect" : [ 512.0, 632.0, 284.0, 21.0 ],
 					"text" : "jit.gl.videoplane VeroVisual @transform_reset 2"
 				}
 
@@ -1083,8 +1127,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 33.0, 423.0, 140.0, 21.0 ],
-					"text" : "jit.gl.render VeroVisual"
+					"patching_rect" : [ 33.0, 423.0, 253.0, 21.0 ],
+					"text" : "jit.gl.render VeroVisual @fsaa 1 @interp 1"
 				}
 
 			}
@@ -1361,6 +1405,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-41", 1 ]
 				}
 
 			}
