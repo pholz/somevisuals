@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 1
+			"minor" : 1,
+			"revision" : 5,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 1053.0, 97.0, 137.0, 117.0 ],
@@ -35,8 +36,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.0, 16.0, 34.0, 20.0 ],
-					"text" : "r fps"
+					"patching_rect" : [ 14.0, 16.0, 41.0, 20.0 ],
+					"text" : "r fps2"
 				}
 
 			}
