@@ -15,7 +15,6 @@
 	<param name="tex4" type="int" default="4" />
 	<language name="glsl" version="1.0">
 		<bind param="xfade" program="fp" />
-		<bind param="xfade" program="fp" />
 		<bind param="xfadeA1" program="fp" />
 		<bind param="xfadeA2" program="fp" />
 		<bind param="xfadeB1" program="fp" />

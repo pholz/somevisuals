@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ -16.0, 50.0, 1920.0, 575.0 ],
+		"rect" : [ 8.0, 50.0, 1920.0, 790.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2987,21 +2987,6 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1093.623047, 664.298828, 46.0, 20.0 ],
 					"text" : "gate 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"hidden" : 1,
-					"id" : "obj-138",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 792.0, 523.0, 62.0, 20.0 ],
-					"text" : "auto-color"
 				}
 
 			}
