@@ -3,6 +3,7 @@
      </description>
      <param name="pitch" type="vec2" default="0. 0." />
      <param name="pitchEffect" type="float" default="1.0"/>
+     <param name="colorMode" type="int" default="0"/>
      <param name="vNoiseFactor" type="float" default="0.0"/>
      <param name="vCircleFactor" type="float" default="0.0"/>
      <param name="vCircleFactor2" type="float" default="0.0"/>
@@ -22,6 +23,7 @@
      <bind param="time" program="vp"/>
      <bind param="timeMultiplier" program="vp"/>
      <bind param="pitchEffect" program="fp"/>
+     <bind param="colorMode" program="fp"/>
      <bind param="tex0" program="fp" />
      <bind param="texmode" program="fp" />
      <bind param="brightness" program="fp" />
@@ -97,6 +99,7 @@ uniform float pitchEffect;
 uniform sampler2D tex0;
 uniform int texmode;
 uniform float brightness;
+uniform int colorMode;
 
 const float PI = 3.1415927;
 
@@ -148,7 +151,10 @@ void main()
 
         }
 
-        finalColor.r *= mix(1.0, pitch.x, pitchEffect);
+        if (colorMode == 0)
+            finalColor.r *= mix(1.0, pitch.x, pitchEffect);
+        else
+            finalColor.gb *= mix(1.0, pitch.x, pitchEffect);
 
         float rgbsum = finalColor.r * 0.33 + finalColor.g * 0.33 + finalColor.b * 0.33;
         if (rgbsum < 0.05)
