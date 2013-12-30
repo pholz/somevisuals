@@ -3,12 +3,11 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 5,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 1
 		}
 ,
-		"rect" : [ -16.0, 50.0, 1920.0, 575.0 ],
+		"rect" : [ 43.0, 282.0, 1920.0, 575.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -70,7 +69,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-139",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -853,7 +851,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-80",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1452,7 +1449,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-136",
 					"maxclass" : "comment",
@@ -1467,7 +1463,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-137",
 					"maxclass" : "comment",
@@ -1482,7 +1477,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-140",
 					"maxclass" : "comment",
@@ -1497,7 +1491,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-135",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2193,7 +2186,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-219",
 					"maxclass" : "comment",
@@ -2208,7 +2200,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-218",
 					"maxclass" : "comment",
@@ -2223,7 +2214,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-217",
 					"maxclass" : "comment",
@@ -2238,7 +2228,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-211",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2309,7 +2298,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-129",
 					"maxclass" : "comment",
@@ -2324,7 +2312,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-130",
 					"maxclass" : "comment",
@@ -2339,7 +2326,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-131",
 					"maxclass" : "comment",
@@ -2354,7 +2340,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-132",
 					"maxclass" : "comment",
@@ -2369,7 +2354,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-143",
 					"maxclass" : "comment",
@@ -2436,7 +2420,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-153",
 					"maxclass" : "comment",
@@ -2451,7 +2434,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-154",
 					"maxclass" : "comment",
@@ -2466,7 +2448,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-155",
 					"maxclass" : "comment",
@@ -2481,7 +2462,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-156",
 					"maxclass" : "comment",
@@ -2496,7 +2476,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-157",
 					"maxclass" : "comment",
@@ -2511,7 +2490,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-158",
 					"maxclass" : "comment",
@@ -2591,7 +2569,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-164",
 					"maxclass" : "comment",
@@ -2606,7 +2583,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-165",
 					"maxclass" : "comment",
@@ -2660,7 +2636,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-175",
 					"maxclass" : "comment",
@@ -2801,8 +2776,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 518.0, 46.679688, 21.798828 ],
-					"presentation_rect" : [ 1169.5, 356.600586, 46.679688, 21.798828 ],
+					"patching_rect" : [ 560.0, 518.0, 46.692719, 21.798828 ],
+					"presentation_rect" : [ 1169.5, 356.600586, 46.692719, 21.798828 ],
 					"text" : "Spiral",
 					"texton" : "Spiral"
 				}
@@ -2820,8 +2795,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 518.0, 46.679688, 21.798828 ],
-					"presentation_rect" : [ 1077.493164, 363.600586, 46.679688, 21.798828 ],
+					"patching_rect" : [ 336.0, 518.0, 46.692719, 21.798828 ],
+					"presentation_rect" : [ 1077.493164, 363.600586, 46.692719, 21.798828 ],
 					"text" : "Spiral",
 					"texton" : "Spiral"
 				}
@@ -2839,8 +2814,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 556.5, 56.013672, 21.798828 ],
-					"presentation_rect" : [ 1162.5, 321.201172, 56.013672, 21.798828 ],
+					"patching_rect" : [ 560.0, 556.5, 56.030666, 21.798828 ],
+					"presentation_rect" : [ 1162.5, 321.201172, 56.030666, 21.798828 ],
 					"text" : "Plasma",
 					"texton" : "Plasma"
 				}
@@ -2858,8 +2833,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 556.5, 56.013672, 21.798828 ],
-					"presentation_rect" : [ 1083.493164, 323.201172, 56.013672, 21.798828 ],
+					"patching_rect" : [ 336.0, 556.5, 56.030666, 21.798828 ],
+					"presentation_rect" : [ 1083.493164, 323.201172, 56.030666, 21.798828 ],
 					"text" : "Plasma",
 					"texton" : "Plasma"
 				}
@@ -2877,8 +2852,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 479.5, 53.347656, 21.798828 ],
-					"presentation_rect" : [ 1012.5, 280.0, 53.347656, 21.798828 ],
+					"patching_rect" : [ 112.0, 479.5, 53.363522, 21.798828 ],
+					"presentation_rect" : [ 1012.5, 280.0, 53.363522, 21.798828 ],
 					"text" : "Stripes",
 					"texton" : "Stripes"
 				}
@@ -2896,8 +2871,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 479.5, 53.347656, 21.798828 ],
-					"presentation_rect" : [ 1084.0, 274.0, 53.347656, 21.798828 ],
+					"patching_rect" : [ 336.0, 479.5, 53.363522, 21.798828 ],
+					"presentation_rect" : [ 1084.0, 274.0, 53.363522, 21.798828 ],
 					"text" : "Stripes",
 					"texton" : "Stripes"
 				}
@@ -2915,8 +2890,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 479.5, 53.347656, 21.798828 ],
-					"presentation_rect" : [ 1159.0, 273.0, 53.347656, 21.798828 ],
+					"patching_rect" : [ 560.0, 479.5, 53.363522, 21.798828 ],
+					"presentation_rect" : [ 1159.0, 273.0, 53.363522, 21.798828 ],
 					"text" : "Stripes",
 					"texton" : "Stripes"
 				}
@@ -2934,8 +2909,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 518.0, 46.679688, 21.798828 ],
-					"presentation_rect" : [ 1389.375977, 290.201172, 46.679688, 21.798828 ],
+					"patching_rect" : [ 112.0, 518.0, 46.692719, 21.798828 ],
+					"presentation_rect" : [ 1389.375977, 290.201172, 46.692719, 21.798828 ],
 					"text" : "Spiral",
 					"texton" : "Spiral"
 				}
@@ -2953,8 +2928,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 556.5, 56.013672, 21.798828 ],
-					"presentation_rect" : [ 1352.333984, 290.201172, 56.013672, 21.798828 ],
+					"patching_rect" : [ 112.0, 556.5, 56.030666, 21.798828 ],
+					"presentation_rect" : [ 1352.333984, 290.201172, 56.030666, 21.798828 ],
 					"text" : "Plasma",
 					"texton" : "Plasma"
 				}
@@ -2994,7 +2969,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"hidden" : 1,
 					"id" : "obj-138",
 					"maxclass" : "comment",
@@ -3014,7 +2988,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 805.0, 598.0, 70.0, 20.0 ],
 					"text" : "camera_vp"
 				}
@@ -3151,9 +3125,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 5,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 1
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -3233,21 +3206,22 @@
 								}
 
 							}
- ]
+ ],
+						"dependency_cache" : [  ]
 					}
 ,
 					"patching_rect" : [ 798.0, -129.0, 43.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"digest" : "",
 						"fontface" : 0,
-						"fontname" : "Arial",
 						"fontsize" : 12.0,
-						"globalpatchername" : "",
-						"tags" : ""
+						"default_fontface" : 0,
+						"fontname" : "Arial",
+						"digest" : "",
+						"tags" : "",
+						"default_fontname" : "Arial",
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p esc"
@@ -3327,8 +3301,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 441.0, 24.003906, 21.798828 ],
-					"presentation_rect" : [ 264.0, 702.100586, 24.003906, 21.798828 ],
+					"patching_rect" : [ 560.0, 441.0, 24.007305, 21.798828 ],
+					"presentation_rect" : [ 264.0, 702.100586, 24.007305, 21.798828 ],
 					"text" : "V",
 					"texton" : "V"
 				}
@@ -3346,8 +3320,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 441.0, 24.003906, 21.798828 ],
-					"presentation_rect" : [ 260.0, 660.0, 24.003906, 21.798828 ],
+					"patching_rect" : [ 336.0, 441.0, 24.007305, 21.798828 ],
+					"presentation_rect" : [ 260.0, 660.0, 24.007305, 21.798828 ],
 					"text" : "V",
 					"texton" : "V"
 				}
@@ -3365,8 +3339,8 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.0, 441.0, 24.003906, 21.798828 ],
-					"presentation_rect" : [ 0.0, 0.0, 24.003906, 21.798828 ],
+					"patching_rect" : [ 119.0, 441.0, 24.007305, 21.798828 ],
+					"presentation_rect" : [ 0.0, 0.0, 24.007305, 21.798828 ],
 					"text" : "V",
 					"texton" : "V"
 				}
@@ -4488,6 +4462,7 @@
 				"box" : 				{
 					"background" : 1,
 					"id" : "obj-215",
+					"ignoreclick" : 1,
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4499,6 +4474,7 @@
 				"box" : 				{
 					"background" : 1,
 					"id" : "obj-214",
+					"ignoreclick" : 1,
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4510,6 +4486,7 @@
 				"box" : 				{
 					"background" : 1,
 					"id" : "obj-213",
+					"ignoreclick" : 1,
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4521,6 +4498,7 @@
 				"box" : 				{
 					"background" : 1,
 					"id" : "obj-212",
+					"ignoreclick" : 1,
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -7857,337 +7835,337 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "01.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "02.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "03.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "04.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "05.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "06.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "07.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "08.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "09.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "10.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "11.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "12.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "13.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "14.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "15.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "16.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "17.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "18.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "21.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "19.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "20.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "22.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "23.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "25.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "26.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "27.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "28.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "24.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "29.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "30.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "31.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "32.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "33.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "34.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "35.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
+				"bootpath" : "/Users/holz/max-media/media",
+				"patcherrelativepath" : "../../../max-media/media",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "videoplayer_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camera_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radiotoggle3_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "plasma_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spiral_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stripes_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_xfadeGlobal.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radiotoggle4_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_kaleido_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bcd3000_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ph.sel_ak_clip.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ph.midicontroller.akai1.min.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_displace_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}

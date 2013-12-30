@@ -15,7 +15,6 @@
 	<param name="tex4" type="int" default="4" />
 	<language name="glsl" version="1.0">
 		<bind param="xfade" program="fp" />
-		<bind param="xfade" program="fp" />
 		<bind param="xfadeA1" program="fp" />
 		<bind param="xfadeA2" program="fp" />
 		<bind param="xfadeB1" program="fp" />
@@ -52,27 +51,27 @@ uniform float xfadeB1;
 uniform float xfadeB2;
 uniform float mixGlobal;
 
-void main() {      
+void main() {
 	vec4 a1 = texture2DRect(tex0, texcoord0);
 	vec4 a2 = texture2DRect(tex1, texcoord1);
 	vec4 b1 = texture2DRect(tex2, texcoord2);
     vec4 b2 = texture2DRect(tex3, texcoord3);
 	vec4 a = a1 * xfadeA1 + a2 * xfadeA2;
-	
+
 	const vec3 LumCoeff = vec3 (0.2125, 0.7154, 0.0721);
 	a.rgb = vec3(dot(a.rgb, LumCoeff));
 	b2.rgb = vec3(dot(b2.rgb, LumCoeff));
-		
+
 	vec4 b = b1 * xfadeB1 + b2 * xfadeB2;
-	
+
 	vec4 mixAB = mix(a, b, xfade);
 	vec4 inputPH = texture2DRect(tex4, texcoord4);
 	vec4 multRes = inputPH * mixAB;
-	
+
 	float mix1 = min(1.0, mixGlobal * 2.0);
 	float mix2 = max(0.0, (mixGlobal-0.5) * 2.0);
 	vec4 res1 = mix(mixAB, multRes, mix1);
-	gl_FragColor = mix(res1, inputPH, mix2);	
+	gl_FragColor = mix(res1, inputPH, mix2);
 }
 
 ]]>
