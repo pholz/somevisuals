@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 583.0, 186.0, 1349.0, 864.0 ],
+		"rect" : [ 563.0, 186.0, 1349.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -87,7 +87,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 121.0, 114.0, 25.0, 25.0 ]
 				}
 
@@ -99,7 +99,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 47.0, 128.0, 25.0, 25.0 ]
 				}
 
@@ -174,8 +174,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 108.0, 399.0, 308.0, 21.0 ],
-					"text" : "jit.gl.slab @file td.kaleido.jxs @dest_dim 1920 1080"
+					"patching_rect" : [ 108.0, 399.0, 411.0, 21.0 ],
+					"text" : "jit.gl.slab @file td.kaleido.jxs @dest_dim 1920 1080 @dim 1920 1080"
 				}
 
 			}
@@ -942,8 +942,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ]
+ ]
 	}
 
 }

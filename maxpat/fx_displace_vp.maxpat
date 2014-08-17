@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
@@ -202,8 +202,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 108.0, 399.0, 343.0, 21.0 ],
-					"text" : "jit.gl.slab @file td.lumadisplace.jxs @dest_dim 1920 1080"
+					"patching_rect" : [ 108.0, 399.0, 445.0, 21.0 ],
+					"text" : "jit.gl.slab @file td.lumadisplace.jxs @dim 1920 1080 @dest_dim 1920 1080"
 				}
 
 			}

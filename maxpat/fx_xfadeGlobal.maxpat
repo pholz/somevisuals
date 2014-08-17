@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
@@ -241,8 +241,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 240.5, 177.0, 356.0, 20.0 ],
-					"text" : "jit.gl.slab @file co.xfade_vp.jxs @dest_dim 1920 1080 @inputs 5"
+					"patching_rect" : [ 240.5, 177.0, 451.0, 20.0 ],
+					"text" : "jit.gl.slab @file co.xfade_vp.jxs @dest_dim 1920 1080 @dim 1920 1080 @inputs 5"
 				}
 
 			}
