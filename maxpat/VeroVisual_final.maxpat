@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 8.0, 50.0, 1920.0, 790.0 ],
+		"rect" : [ 239.0, 69.0, 1920.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.929412, 0.360784, 0.866667, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-138",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1325.5, 1245.0, 390.0, 20.0 ],
+					"text" : "jit.gl.spoutsender VeroVisual @sendername verovisual @hidewindow 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-171",
@@ -1570,7 +1585,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1205.5, 1194.0, 84.0, 20.0 ],
+					"patching_rect" : [ 1207.5, 1192.0, 84.0, 20.0 ],
 					"text" : "fx_kaleido_vp"
 				}
 
@@ -3137,7 +3152,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x86"
 						}
 ,
@@ -3249,8 +3264,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 798.0, -36.0, 221.0, 21.0 ],
-					"text" : "jit.window VeroVisual @fsmenubar 0"
+					"patching_rect" : [ 798.0, -22.0, 390.0, 21.0 ],
+					"text" : "jit.window VeroVisual @fsmenubar 0 @size 1920 1080 @visible 1"
 				}
 
 			}
@@ -3264,8 +3279,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1027.827148, -79.736816, 283.0, 21.0 ],
-					"text" : "jit.gl.render VeroVisual @erase_color 0. 0. 0. 1."
+					"patching_rect" : [ 1027.827148, -79.736816, 418.0, 21.0 ],
+					"text" : "jit.gl.render VeroVisual @dest_dim 1920 1080 @erase_color 0. 0. 0. 1."
 				}
 
 			}
@@ -3952,7 +3967,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 784.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 784.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -3967,7 +3982,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 672.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 672.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -3982,7 +3997,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 560.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -3997,7 +4012,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 448.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 448.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4012,7 +4027,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 336.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4027,7 +4042,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 224.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 224.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4042,7 +4057,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 315.0, 112.0, 63.0 ],
+					"patching_rect" : [ 112.0, 315.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4057,7 +4072,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 336.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4072,7 +4087,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 784.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 784.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4087,7 +4102,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 672.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 672.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4102,7 +4117,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 560.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4117,7 +4132,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 448.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 448.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4132,7 +4147,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 224.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 224.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4147,7 +4162,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 252.0, 112.0, 63.0 ],
+					"patching_rect" : [ 112.0, 252.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4162,7 +4177,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 672.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 672.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4177,7 +4192,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 560.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4192,7 +4207,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 784.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 784.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4207,7 +4222,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 448.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 448.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4222,7 +4237,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 336.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4237,7 +4252,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 224.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 224.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4252,7 +4267,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 189.0, 112.0, 63.0 ],
+					"patching_rect" : [ 112.0, 189.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4267,7 +4282,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 784.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 784.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4282,7 +4297,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 672.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 672.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4297,7 +4312,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 560.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4312,7 +4327,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 448.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 448.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4327,7 +4342,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 336.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4342,7 +4357,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 224.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 224.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4357,7 +4372,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 126.0, 112.0, 63.0 ],
+					"patching_rect" : [ 112.0, 126.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4372,7 +4387,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 784.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 784.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4387,7 +4402,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 672.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 672.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4402,7 +4417,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 560.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4417,7 +4432,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 448.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 448.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4432,7 +4447,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 336.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 336.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4447,9 +4462,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 224.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 224.0, 63.0, 0.0, 0.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.0, 63.0, 112.0, 63.0 ],
+					"presentation_rect" : [ 224.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4464,7 +4479,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 63.0, 112.0, 63.0 ],
+					"patching_rect" : [ 112.0, 63.0, 0.0, 0.0 ],
 					"snap" : 1
 				}
 
@@ -4510,6 +4525,20 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 112.0, 441.0, 112.0, 151.5 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "visible",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-191",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 864.0, -48.263184, 150.0, 20.0 ]
 				}
 
 			}
@@ -5510,6 +5539,15 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-191", 0 ]
 				}
 
 			}
@@ -7454,6 +7492,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-138", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -7841,340 +7888,99 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "01.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "02.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "03.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "04.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "05.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "06.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "07.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "09.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "10.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "11.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "12.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "13.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "14.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "15.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "16.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "17.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "18.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "21.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "19.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "20.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "22.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "23.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "25.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "26.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "27.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "28.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "24.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "29.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "30.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "31.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "32.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "33.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "34.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "35.png",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat/media",
-				"patcherrelativepath" : "./media/./media/./media/./media/./media/.",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "videoplayer_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camera_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radiotoggle3_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "plasma_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spiral_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stripes_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_xfadeGlobal.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radiotoggle4_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_kaleido_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bcd3000_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ph.sel_ak_clip.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ph.midicontroller.akai1.min.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_displace_vp.maxpat",
-				"bootpath" : "/Users/veronikapa/Desktop/vjing_git/trunk/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.spoutsender.mxe",
+				"type" : "iLaF"
 			}
  ]
 	}

@@ -25,9 +25,9 @@ void main(void)
 {
     const float rad = 1000.0;
     float sz = size * size * size;
+    float ratio = resolution.x/resolution.y;
     vec2 centerAt = vec2(sin(filters.x * 3.14 * 2.0) * resolution.x/20.0 + resolution.x/2.0,
                          cos(filters.x * 3.14 * 2.0) * resolution.y/20.0 + resolution.y/2.0);
-
     gl_FragColor = vec4(1.0);
 
     //   gl_FragColor = vec4(gl_FragCoord.x/resolution.x, 0.0, filters.x, 1.0);
