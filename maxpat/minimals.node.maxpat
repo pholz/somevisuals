@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 1
+			"minor" : 1,
+			"revision" : 8,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 215.0, 291.0, 1426.0, 740.0 ],
+		"rect" : [ 215.0, 291.0, 1614.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +38,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 819.0, 158.0, 50.0, 32.0 ],
-					"text" : "ui_keyup s"
+					"text" : "ui_keyup d"
 				}
 
 			}
@@ -272,8 +273,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 1
+							"minor" : 1,
+							"revision" : 8,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 929.0, 159.0, 640.0, 480.0 ],
@@ -598,6 +600,7 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
 									"id" : "obj-63",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -641,6 +644,7 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
 									"id" : "obj-58",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -654,6 +658,7 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
 									"id" : "obj-57",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -994,28 +999,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "ph.sel_ak_clip.onoff.maxpat",
-								"bootpath" : "/Users/holz/code/somevisuals/maxpat",
-								"type" : "JSON",
-								"implicit" : 1
-							}
  ]
 					}
 ,
 					"patching_rect" : [ 801.409058, 110.763184, 40.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"tags" : "",
-						"fontname" : "Arial",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p nav"
@@ -1609,7 +1607,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-62",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1625,7 +1623,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-53",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1641,7 +1639,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-52",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1658,7 +1656,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-51",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1674,7 +1672,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1690,7 +1688,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-47",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1707,7 +1705,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-46",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1723,7 +1721,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-43",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1739,7 +1737,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-17",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2478,7 +2476,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1078.5, 169.0, 463.0, 21.0 ],
-					"text" : "jit.anim.drive VeroVisual @speed 4. @ui_listen 1 @ease 0.5 @easefunc linear"
+					"text" : "jit.anim.drive VeroVisual @speed 1. @ui_listen 1 @ease 0.8 @easefunc linear"
 				}
 
 			}
@@ -2791,7 +2789,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-71",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2807,7 +2805,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-58",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2823,7 +2821,7 @@
 					"bgcolor" : [ 1.0, 0.5, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 14.0,
-					"frgb" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"frgb" : 0.0,
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -3100,8 +3098,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 1
+							"minor" : 1,
+							"revision" : 8,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 403.0, 198.0, 640.0, 480.0 ],
@@ -3541,22 +3540,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [  ]
+ ]
 					}
 ,
 					"patching_rect" : [ 304.909058, 536.0, 123.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"tags" : "",
-						"fontname" : "Arial",
 						"default_fontsize" : 12.0,
 						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
-						"fontsize" : 12.0
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p genScaleFromBeat"
@@ -5656,28 +5654,6 @@
 					"source" : [ "obj-99", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ph.sel_ak_chan.maxpat",
-				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ph.sel_ak_clip.maxpat",
-				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ph.sel_ak_clip.onoff.maxpat",
-				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
-				"patcherrelativepath" : "",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ]
 	}
