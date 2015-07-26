@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 8,
-			"architecture" : "x86"
+			"revision" : 6,
+			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 140.0, 510.0, 647.0, 489.0 ],
+		"rect" : [ 176.0, 506.0, 647.0, 489.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-11",
+					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 214.0, 220.5, 299.0, 20.0 ],
-					"text" : "jit.gl.videoplane xivout @transform_reset 2 @enable 1"
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 156.0, 115.0, 75.0, 20.0 ],
+					"text" : "r rendshape"
 				}
 
 			}
@@ -48,9 +48,8 @@
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numinlets" : 1,
+					"numoutlets" : 0,
 					"patching_rect" : [ 142.0, 274.0, 275.0, 20.0 ],
 					"text" : "jit.gl.spoutsender xivout @sendername xivSender"
 				}
@@ -91,8 +90,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 75.0, 368.0, 240.0, 20.0 ],
-					"text" : "jit.window @name xivout @size 1920 1080"
+					"patching_rect" : [ 75.0, 368.0, 247.0, 20.0 ],
+					"text" : "jit.window @name out-win @size 1920 1080"
 				}
 
 			}
@@ -105,22 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 28.0, 204.5, 80.0, 36.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"hidden" : 1,
-					"id" : "obj-40",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 191.0, 178.0, 345.0, 20.0 ],
-					"text" : "jit.gl.node xivout @name out-win @dim 1920 1920 @capture 1"
+					"patching_rect" : [ 28.0, 204.5, 80.0, 35.0 ]
 				}
 
 			}
@@ -133,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 28.0, 158.0, 223.0, 20.0 ],
-					"text" : "jit.gl.render xivout @erase_color 0 0 0 0"
+					"patching_rect" : [ 28.0, 158.0, 230.0, 20.0 ],
+					"text" : "jit.gl.render out-win @erase_color 0 0 0 1"
 				}
 
 			}
@@ -246,28 +230,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -299,11 +274,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "jit.gl.spoutsender.mxe",
-				"type" : "iLaF"
-			}
- ]
+		"dependency_cache" : [  ]
 	}
 
 }
