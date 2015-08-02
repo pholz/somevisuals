@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 95.0, 88.0, 1614.0, 740.0 ],
+		"rect" : [ 438.0, 69.0, 1614.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3073,8 +3073,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 441.5, 837.0, 138.0, 20.0 ],
-					"text" : "jit.matrix 4 float32 512 1"
+					"patching_rect" : [ 441.5, 837.0, 145.0, 20.0 ],
+					"text" : "jit.matrix 4 float32 1024 1"
 				}
 
 			}
@@ -4162,8 +4162,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 44.818115, 124.272461, 527.0, 19.0 ],
-					"text" : "jit.gl.gridshape out-win @dim 30 30 @shape plane @scale 0.7 0.7 0.7 @name sq @position -0. 0. 0."
+					"patching_rect" : [ 44.818115, 124.272461, 540.0, 19.0 ],
+					"text" : "jit.gl.gridshape out-win @dim 100 100 @shape plane @scale 0.7 0.7 0.7 @name sq @position -0. 0. 0."
 				}
 
 			}
@@ -5935,6 +5935,10 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.mult.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}

@@ -48,7 +48,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 142.0, 274.0, 275.0, 20.0 ],
 					"text" : "jit.gl.spoutsender xivout @sendername xivSender"
@@ -117,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 28.0, 158.0, 230.0, 20.0 ],
-					"text" : "jit.gl.render out-win @erase_color 0 0 0 1"
+					"patching_rect" : [ 28.0, 158.0, 397.0, 20.0 ],
+					"text" : "jit.gl.render out-win @erase_color 0 0 0 1 @antialias 4 @blend_enable 1"
 				}
 
 			}
