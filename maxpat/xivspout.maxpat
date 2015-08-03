@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
-			"architecture" : "x64"
+			"revision" : 8,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 176.0, 506.0, 647.0, 489.0 ],
+		"rect" : [ -864.0, 351.0, 647.0, 489.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,14 +30,28 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"fontsize" : 13.0,
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.0, 115.0, 75.0, 20.0 ],
-					"text" : "r rendshape"
+					"patching_rect" : [ 155.5, 47.0, 50.0, 19.0 ],
+					"text" : "reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 155.5, 76.0, 140.0, 21.0 ],
+					"text" : "jit.gl.handle @visible 0"
 				}
 
 			}
@@ -76,8 +90,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 75.0, 368.0, 247.0, 20.0 ],
-					"text" : "jit.window @name out-win @size 1920 1080"
+					"patching_rect" : [ 75.0, 368.0, 289.0, 20.0 ],
+					"text" : "jit.window out-win @name out-win @size 1920 1080"
 				}
 
 			}
@@ -90,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 28.0, 204.5, 80.0, 35.0 ]
+					"patching_rect" : [ 28.0, 204.5, 80.0, 36.0 ]
 				}
 
 			}
@@ -103,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 28.0, 158.0, 397.0, 20.0 ],
+					"patching_rect" : [ 28.0, 157.0, 397.0, 20.0 ],
 					"text" : "jit.gl.render out-win @erase_color 0 0 0 1 @antialias 4 @blend_enable 1"
 				}
 
@@ -158,8 +172,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 28.0, 73.0, 58.0, 20.0 ],
-					"text" : "qmetro 5"
+					"patching_rect" : [ 28.0, 73.0, 65.0, 20.0 ],
+					"text" : "qmetro 15"
 				}
 
 			}
@@ -202,6 +216,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
