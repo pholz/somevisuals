@@ -1,0 +1,181 @@
+<jittershader name="shdrXvOne">
+     <description>
+     </description>
+     <param name="pitch" type="vec2" default="0. 0." />
+     <param name="pitchEffect" type="float" default="1.0"/>
+     <param name="colorMode" type="int" default="0"/>
+     <param name="vNoiseFactor" type="float" default="0.0"/>
+     <param name="vCircleFactor" type="float" default="0.0"/>
+     <param name="vCircleFactor2" type="float" default="0.0"/>
+     <param name="time" type="float" default="0.0"/>
+     <param name="pad1" type="float" default="0.0"/>
+     <param name="timeMultiplier" type="float" default="1.0"/>
+     <param name="pitchEffect" type="float" default="1.0"/>
+     <param name="texmode" type="int" default="0" />
+     <param name="brightness" type="float" default="1.0" />
+     <param name="tex0" type="int" default="0" />
+     <language name="glsl" version="1.0">
+
+     <bind param="vCircleFactor" program="vp"/>
+     <bind param="vCircleFactor2" program="vp"/>
+     <bind param="vNoiseFactor" program="vp"/>
+     <bind param="pitch" program="fp"/>
+     <bind param="time" program="vp"/>
+     <bind param="time" program="fp"/>
+     <bind param="pad1" program="fp"/>
+     <bind param="timeMultiplier" program="vp"/>
+     <bind param="pitchEffect" program="fp"/>
+     <bind param="colorMode" program="fp"/>
+     <bind param="tex0" program="fp" />
+     <bind param="texmode" program="fp" />
+     <bind param="brightness" program="fp" />
+     <program name="vp" type="vertex" >
+
+<![CDATA[
+
+varying vec2 texcoord0;
+varying vec2 texcoord1;
+varying vec2 texcoord2;
+varying vec2 texcoord3;
+varying vec2 texcoord4;
+varying vec2 texcoord5;
+varying vec2 texcoord6;
+varying vec2 texcoord7;
+
+uniform float vCircleFactor;
+uniform float vCircleFactor2;
+uniform float vNoiseFactor;
+uniform float time;
+uniform float timeMultiplier;
+
+void main()
+{
+    // perform standard transform on vertex
+
+//    gl_Position.x *= sin(gl_MultiTexCoord0.y);
+
+    vec4 vertpos = gl_Vertex;
+    vec4 tformed = gl_ModelViewProjectionMatrix * gl_Vertex;
+
+    //  vertpos.z += vNoiseFactor * sin(gl_MultiTexCoord0.y*6.0)*sin(tan(gl_MultiTexCoord0.y * 1000.0));
+    //  vertpos.x += vNoiseFactor * 0.01 * tan(gl_MultiTexCoord0.y*10.3*tformed.z)*sin(tan(tformed.y*gl_MultiTexCoord0.y * 1000.0));
+//    vertpos.xy += (vertpos.xy- vNoiseFactor * distance(gl_MultiTexCoord0.xy, vec2(0.5,0.5)) * sin(tformed.x*tformed.y);
+
+    float edgeX = -(gl_MultiTexCoord0.x * 2.0 - 1.0);
+    float edgeY = -(gl_MultiTexCoord0.y * 2.0 - 1.0);
+    vertpos.x += vCircleFactor2 * 0.5 * (1.0 - cos( (gl_MultiTexCoord0.y-0.5) * 3.14)) * edgeX;
+
+    vertpos.x += sin(tan(time*timeMultiplier+gl_MultiTexCoord0.y*10.0)) * vNoiseFactor * edgeX * (1.0 - cos( (gl_MultiTexCoord0.y-0.5) * 3.14));
+
+    vertpos.y += vCircleFactor2 * 0.5 * (1.0 - cos( (gl_MultiTexCoord0.x-0.5) * 3.14)) * edgeY;
+
+    vertpos.y += cos(tan(time*timeMultiplier+gl_MultiTexCoord0.x*10.0)) * vNoiseFactor * edgeY * (1.0 - cos( (gl_MultiTexCoord0.x-0.5) * 3.14));
+
+
+    vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.y-0.5) * 3.14);
+    vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.x-0.5) * 3.14);
+    gl_Position = gl_ModelViewProjectionMatrix * vertpos;
+
+    // transform texcoords
+    texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+    texcoord1 = vec2(gl_TextureMatrix[1] * gl_MultiTexCoord1);
+    texcoord2 = vec2(gl_TextureMatrix[2] * gl_MultiTexCoord2);
+    texcoord3 = vec2(gl_TextureMatrix[3] * gl_MultiTexCoord3);
+    texcoord4 = vec2(gl_TextureMatrix[4] * gl_MultiTexCoord4);
+    texcoord5 = vec2(gl_TextureMatrix[5] * gl_MultiTexCoord5);
+    texcoord6 = vec2(gl_TextureMatrix[6] * gl_MultiTexCoord6);
+    texcoord7 = vec2(gl_TextureMatrix[7] * gl_MultiTexCoord7);
+}
+
+]]>
+     </program>
+     <program name="fp" type="fragment">
+
+<![CDATA[
+
+varying vec2 texcoord0;
+varying vec2 texcoord1;
+
+uniform vec2 pitch;
+uniform float pitchEffect;
+uniform sampler2D tex0;
+uniform int texmode;
+uniform float brightness;
+uniform int colorMode;
+uniform float time;
+uniform float pad1;
+
+const float PI = 3.1415927;
+
+// entry point
+void main()
+{
+        float r, theta, x, y;
+        vec2 xynorm;
+
+	// result either blend or mask based on mode
+//        float outline = 0.0;
+//        if (texcoord0.x < 0.1 || texcoord0.x > 0.9 || texcoord0.y < 0.1 || texcoord0.y > 0.9)
+//           outline = 1.0;
+//        outline = max(0.0, sign(sin(texcoord0.x*20.0*3.14+10.0)));
+
+//	gl_FragColor = vec4(outline, pitch.y, outline, 1.0) * pitch.x;
+
+        vec4 finalColor = vec4(1.0, 1.0, 1.0, 1.0);
+
+        if (texmode > 0)
+        {
+                if (texmode == 1) // linear
+                {
+                        finalColor = texture2D(tex0, texcoord0);// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
+                        finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
+                        //  finalColor = finalColor * pow( 2.0*(0.9 - abs(texcoord0.y - 0.5)), 3.0);
+                }
+                else if (texmode == 2) // radial
+                {
+                        r = distance(texcoord0, vec2(0.5, 0.5));
+                        xynorm = texcoord0 - vec2(0.5, 0.5);
+                        theta = atan(xynorm.y, xynorm.x);
+                        x = r * cos(theta);
+                        y = r * sin(theta);
+                        finalColor = texture2D(tex0, vec2(r * 2.0, theta));
+                        if (r > .4)
+                                finalColor = vec4(0.0);
+                }
+                else
+                {
+                    finalColor = texture2D(tex0, texcoord0 * 0.95);
+                    finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
+                    if (sqrt(finalColor.r)/2.0 < distance(texcoord0.y, 0.5))
+                        finalColor *= 0.0;
+
+                }
+
+
+
+        }
+
+        if (colorMode == 0)
+            finalColor.rg *= mix(1.0, pitch.x, pitchEffect);
+        else
+            finalColor.rb *= mix(1.0, pitch.x, pitchEffect);
+
+        float rgbsum = finalColor.r * 0.33 + finalColor.g * 0.33 + finalColor.b * 0.33;
+        if (rgbsum < 0.05)
+                finalColor *= 0.0;
+
+        finalColor.x += pad1;
+
+        gl_FragColor = finalColor * brightness;
+        //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+//        gl_FragColor = texture2D(tex0, texcoord0);
+
+//        gl_FragColor = vec4(texcoord0.x, texcoord0.y, 0.0, 1.0);
+
+	// setting the fragment color is a useful means of debugging
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>
