@@ -43,20 +43,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.929412, 0.360784, 0.866667, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 142.0, 274.0, 275.0, 20.0 ],
-					"text" : "jit.gl.spoutsender xivout @sendername xivSender"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
