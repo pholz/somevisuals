@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ -864.0, 351.0, 647.0, 489.0 ],
+		"rect" : [ 42.0, 607.0, 647.0, 489.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,59 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"htextcolor" : [ 0.870588, 0.870588, 0.870588, 1.0 ],
+					"id" : "obj-19",
+					"maxclass" : "number",
+					"maximum" : 10,
+					"minimum" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 456.0, 55.0, 36.0, 20.0 ],
+					"triscale" : 0.9
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"htextcolor" : [ 0.870588, 0.870588, 0.870588, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "number",
+					"maximum" : 10,
+					"minimum" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 405.0, 55.0, 36.0, 20.0 ],
+					"triscale" : 0.9
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.890196, 0.090196, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 354.0, 76.0, 119.0, 20.0 ],
+					"text" : "pak blend_mode 6 7"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
@@ -117,8 +170,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 28.0, 157.0, 397.0, 20.0 ],
-					"text" : "jit.gl.render out-win @erase_color 0 0 0 1 @antialias 4 @blend_enable 1"
+					"patching_rect" : [ 28.0, 157.0, 496.0, 20.0 ],
+					"text" : "jit.gl.render out-win @erase_color 0 0 0 1 @antialias 1 @blend_enable 1 @depth_enable 0"
 				}
 
 			}
@@ -221,6 +274,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-8", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -279,6 +342,25 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-8", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

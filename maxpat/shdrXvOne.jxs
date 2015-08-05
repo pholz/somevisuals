@@ -24,6 +24,7 @@
      <bind param="time" program="fp"/>
      <bind param="pad1" program="fp"/>
      <bind param="timeMultiplier" program="vp"/>
+     <bind param="timeMultiplier" program="fp"/>
      <bind param="pitchEffect" program="fp"/>
      <bind param="colorMode" program="fp"/>
      <bind param="tex0" program="fp" />
@@ -48,6 +49,8 @@ uniform float vNoiseFactor;
 uniform float time;
 uniform float timeMultiplier;
 
+varying vec4 worldPos;
+
 void main()
 {
     // perform standard transform on vertex
@@ -55,6 +58,7 @@ void main()
 //    gl_Position.x *= sin(gl_MultiTexCoord0.y);
 
     vec4 vertpos = gl_Vertex;
+    worldPos = vertpos;
     vec4 tformed = gl_ModelViewProjectionMatrix * gl_Vertex;
 
     //  vertpos.z += vNoiseFactor * sin(gl_MultiTexCoord0.y*6.0)*sin(tan(gl_MultiTexCoord0.y * 1000.0));
@@ -74,6 +78,7 @@ void main()
 
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.y-0.5) * 3.14);
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.x-0.5) * 3.14);
+
     gl_Position = gl_ModelViewProjectionMatrix * vertpos;
 
     // transform texcoords
@@ -103,9 +108,12 @@ uniform int texmode;
 uniform float brightness;
 uniform int colorMode;
 uniform float time;
+uniform float timeMultiplier;
 uniform float pad1;
 
 const float PI = 3.1415927;
+
+varying vec4 worldPos;
 
 // entry point
 void main()
@@ -166,7 +174,8 @@ void main()
 
         finalColor.x += pad1;
 
-        gl_FragColor = finalColor * brightness;
+        gl_FragColor = finalColor * brightness * sin(worldPos.y * 30.0 + time * timeMultiplier);
+//        gl_FragColor.a = 0.02;
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
 
