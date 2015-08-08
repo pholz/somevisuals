@@ -175,7 +175,7 @@ void main()
         finalColor.x += pad1;
 
         gl_FragColor = finalColor * brightness * sin(worldPos.y * 30.0 + time * timeMultiplier);
-//        gl_FragColor.a = 0.02;
+        gl_FragColor.a *= 0.7;
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
 
