@@ -78,6 +78,7 @@ void main()
 
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.y-0.5) * 3.14);
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.x-0.5) * 3.14);
+//    vertpos.y *= 3.0 * sin(vertpos.z);
 
     gl_Position = gl_ModelViewProjectionMatrix * vertpos;
 
@@ -174,7 +175,7 @@ void main()
 
         finalColor.x += pad1;
 
-        gl_FragColor = finalColor * brightness * sin(worldPos.y * 30.0 + time * timeMultiplier);
+        gl_FragColor = finalColor * brightness;// * sin(worldPos.y * 30.0 + time * timeMultiplier);
         gl_FragColor.a *= 0.7;
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
