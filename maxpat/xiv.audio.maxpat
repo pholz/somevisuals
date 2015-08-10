@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
-			"architecture" : "x64"
+			"revision" : 8,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 282.0, 117.0, 1429.0, 852.0 ],
+		"rect" : [ 186.0, 747.0, 1429.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -539,7 +539,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 531.0, 433.681824, 196.0, 53.0 ],
+					"patching_rect" : [ 531.0, 433.681824, 196.0, 55.0 ],
 					"text" : "beat following: beatSpectrum = list of amplitudes per fequency band",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -556,7 +556,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 531.0, 372.772705, 196.0, 53.0 ],
+					"patching_rect" : [ 531.0, 372.772705, 196.0, 55.0 ],
 					"text" : "beat following: beat = instrument number, attack amplitude, <unknown>",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -573,7 +573,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 890.5, 515.272705, 191.5, 38.0 ],
+					"patching_rect" : [ 890.5, 515.272705, 191.5, 39.0 ],
 					"text" : "fiddle result: first two bands as frequency",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -589,7 +589,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 377.0, 786.0, 191.5, 22.0 ],
+					"patching_rect" : [ 377.0, 786.0, 191.5, 23.0 ],
 					"text" : "lowest 8 fft bands",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -605,7 +605,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.0, 767.0, 191.5, 22.0 ],
+					"patching_rect" : [ 95.0, 767.0, 191.5, 23.0 ],
 					"text" : "send spectrum as  1D matrix",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -692,7 +692,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 85.0, 486.272705, 50.0, 19.0 ],
+					"patching_rect" : [ 85.0, 486.272705, 50.0, 20.0 ],
 					"triscale" : 0.9
 				}
 
@@ -858,7 +858,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 380.0, 497.772705, 58.0, 18.0 ],
+					"patching_rect" : [ 380.0, 497.772705, 58.0, 20.0 ],
 					"text" : "metro 10"
 				}
 
@@ -900,7 +900,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.75, 288.0, 101.0, 42.0 ],
+					"patching_rect" : [ 114.75, 288.0, 101.0, 48.0 ],
 					"text" : "pfft~ ph.pfft.modular 128 2"
 				}
 
@@ -1289,7 +1289,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 822.5, 296.0, 105.0, 33.0 ],
+					"patching_rect" : [ 822.5, 296.0, 105.0, 34.0 ],
 					"text" : "raw pitch and amplitude"
 				}
 
@@ -1302,7 +1302,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
+					"outlettype" : [ "float", "bang", "list", "float", "list" ],
 					"patching_rect" : [ 786.5, 208.818176, 113.0, 20.0 ],
 					"text" : "fiddle~ 1024 1 20 3"
 				}
@@ -1413,7 +1413,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.5, 315.0, 101.0, 45.0 ],
+					"patching_rect" : [ 542.5, 315.0, 101.0, 46.0 ],
 					"text" : "thresh 19.291338 1.574803"
 				}
 
@@ -1496,7 +1496,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 511.5, 69.0, 212.0, 45.0 ],
+					"patching_rect" : [ 511.5, 69.0, 212.0, 46.0 ],
 					"text" : "open C:/Users/veronikapa/Desktop/soundlab.aiff"
 				}
 
@@ -1535,7 +1535,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.0, 127.0, 83.0, 19.0 ],
+					"patching_rect" : [ 85.0, 127.0, 83.0, 20.0 ],
 					"text" : "loadmess 120"
 				}
 
@@ -1562,7 +1562,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "list", "list" ],
 					"patching_rect" : [ 416.0, 315.0, 46.0, 20.0 ],
 					"text" : "bonk~"
 				}
@@ -1647,7 +1647,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 192.0, 94.0, 36.0, 19.0 ],
+					"patching_rect" : [ 192.0, 94.0, 36.0, 20.0 ],
 					"triscale" : 0.9
 				}
 
@@ -1673,7 +1673,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 192.0, 127.0, 48.0, 19.0 ],
+					"patching_rect" : [ 192.0, 127.0, 48.0, 20.0 ],
 					"save" : [ "#N", "sfplay~", "", 1, 120960, 0, "", ";" ],
 					"text" : "sfplay~"
 				}
@@ -1917,6 +1917,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
@@ -2726,17 +2744,29 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ph.pfft.modular.maxpat",
-				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ph.sel_ak_chan.maxpat",
-				"bootpath" : "/Users/holz/code/somevisuals/maxpat",
+				"bootpath" : "E:/code/somevisuals/maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "bonk~.mxe",
+				"type" : "iLaF"
+			}
+, 			{
+				"name" : "fiddle~.mxe",
+				"type" : "iLaF"
+			}
+, 			{
+				"name" : "jit.pass.mxe",
+				"type" : "iLaF"
 			}
  ]
 	}

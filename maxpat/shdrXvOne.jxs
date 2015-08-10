@@ -136,7 +136,7 @@ void main()
         {
                 if (texmode == 1) // linear
                 {
-                        finalColor = texture2D(tex0, texcoord0);// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
+                    finalColor = texture2D(tex0, texcoord0.xy * vec2(0.16, 1.0));// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
                         finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
                         //  finalColor = finalColor * pow( 2.0*(0.9 - abs(texcoord0.y - 0.5)), 3.0);
                 }
@@ -175,7 +175,7 @@ void main()
 
         finalColor.x += pad1;
 
-        gl_FragColor = finalColor * brightness;// * sin(worldPos.y * 30.0 + time * timeMultiplier);
+        gl_FragColor = finalColor * brightness + vec4(sin(worldPos.z*10.0), 0.0,0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
         gl_FragColor.a *= 0.7;
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
