@@ -13,8 +13,9 @@
      <param name="pitchEffect" type="float" default="1.0"/>
      <param name="texmode" type="int" default="0" />
      <param name="brightness" type="float" default="1.0" />
+     <param name="edgeWidth" type="float" default="1.0" />
      <param name="tex0" type="int" default="0" />
-     <language name="glsl" version="1.0">
+     <language name="glsl" version="1.2">
 
      <bind param="vCircleFactor" program="vp"/>
      <bind param="vCircleFactor2" program="vp"/>
@@ -30,9 +31,12 @@
      <bind param="tex0" program="fp" />
      <bind param="texmode" program="fp" />
      <bind param="brightness" program="fp" />
+     <bind param="edgeWidth" program="fp" />
      <program name="vp" type="vertex" >
 
 <![CDATA[
+
+#version 120
 
 varying vec2 texcoord0;
 varying vec2 texcoord1;
@@ -95,12 +99,60 @@ void main()
 
 ]]>
      </program>
-     <program name="fp" type="fragment">
+
+<program name="gp" type="geometry" vertices_out="3" input_type="triangles" output_type="triangles">
 
 <![CDATA[
 
-varying vec2 texcoord0;
-varying vec2 texcoord1;
+//varying vec4 bary;
+#version 120
+#extension GL_EXT_geometry_shader4 : enable
+
+varying in vec2 texcoord0[3];
+varying in vec2 texcoord1[3];
+varying in vec4 worldPos[3];
+
+varying out vec2 texcoord0f;
+varying out vec2 texcoord1f;
+varying out vec4 worldPosf;
+varying out vec3 bary;
+
+void main()
+{
+    gl_Position = gl_PositionIn[0];
+    texcoord0f = texcoord0[0];
+    texcoord1f = texcoord1[0];
+    worldPosf = worldPos[0];
+    bary = vec3(1.0f, 0.0f, 0.0f);
+    EmitVertex();
+
+    gl_Position = gl_PositionIn[1];
+    texcoord0f = texcoord0[1];
+    texcoord1f = texcoord1[1];
+    worldPosf = worldPos[1];
+    bary = vec3(0.0f, 1.0f, 0.0f);
+    EmitVertex();
+
+    gl_Position = gl_PositionIn[2];
+    texcoord0f = texcoord0[2];
+    texcoord1f = texcoord1[2];
+    worldPosf = worldPos[2];
+    bary = vec3(0.0f, 0.0f, 1.0f);
+    EmitVertex();
+
+    EndPrimitive();
+}
+
+]]>
+
+</program>
+
+     <program name="fp" type="fragment">
+
+<![CDATA[
+#version 120
+varying vec2 texcoord0f;
+varying vec2 texcoord1f;
 
 uniform vec2 pitch;
 uniform float pitchEffect;
@@ -111,10 +163,19 @@ uniform int colorMode;
 uniform float time;
 uniform float timeMultiplier;
 uniform float pad1;
+uniform float edgeWidth;
 
 const float PI = 3.1415927;
 
-varying vec4 worldPos;
+varying vec4 worldPosf;
+varying vec3 bary;
+
+#extension GL_OES_standard_derivatives : enable
+float edgeFactor(){
+    vec3 d = fwidth(bary);
+    vec3 a3 = smoothstep(vec3(0.0), d*edgeWidth, bary);
+    return min(min(a3.x, a3.y), a3.z);
+}
 
 // entry point
 void main()
@@ -136,14 +197,14 @@ void main()
         {
                 if (texmode == 1) // linear
                 {
-                    finalColor = texture2D(tex0, texcoord0.xy * vec2(0.16, 1.0));// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
+                    finalColor = texture2D(tex0, texcoord0f.xy * vec2(0.16, 1.0));// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
                         finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
                         //  finalColor = finalColor * pow( 2.0*(0.9 - abs(texcoord0.y - 0.5)), 3.0);
                 }
                 else if (texmode == 2) // radial
                 {
-                        r = distance(texcoord0, vec2(0.5, 0.5));
-                        xynorm = texcoord0 - vec2(0.5, 0.5);
+                        r = distance(texcoord0f, vec2(0.5, 0.5));
+                        xynorm = texcoord0f - vec2(0.5, 0.5);
                         theta = atan(xynorm.y, xynorm.x);
                         x = r * cos(theta);
                         y = r * sin(theta);
@@ -153,9 +214,9 @@ void main()
                 }
                 else
                 {
-                    finalColor = texture2D(tex0, texcoord0 * 0.95);
+                    finalColor = texture2D(tex0, texcoord0f * 0.95);
                     finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
-                    if (sqrt(finalColor.r)/2.0 < distance(texcoord0.y, 0.5))
+                    if (sqrt(finalColor.r)/2.0 < distance(texcoord0f.y, 0.5))
                         finalColor *= 0.0;
 
                 }
@@ -175,8 +236,12 @@ void main()
 
         finalColor.x += pad1;
 
-        gl_FragColor = finalColor * brightness + vec4(sin(worldPos.z*10.0), 0.0,0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
+
+
+        gl_FragColor = finalColor * brightness + vec4(sin(worldPosf.z*10.0), 0.0,0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
         gl_FragColor.a *= 0.7;
+//        gl_FragColor.rgb *= pow(length(bary),10.0);
+        gl_FragColor.rgb *= mix(vec3(0.5), vec3(0.0), edgeFactor());
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
 
