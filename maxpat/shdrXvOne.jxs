@@ -174,7 +174,7 @@ varying vec3 bary;
 float edgeFactor(){
     vec3 d = fwidth(bary);
     vec3 a3 = smoothstep(vec3(0.0), d*edgeWidth, bary);
-    return min(min(a3.x, a3.y), a3.z);
+    return min(min(a3.x > 0.5 ? 1.0 : 0.0, a3.y > 0.5 ? 1.0 : 0.0), a3.z > 0.5 ? 1.0 : 0.0);
 }
 
 // entry point
@@ -238,10 +238,14 @@ void main()
 
 
 
-        gl_FragColor = finalColor * brightness + vec4(sin(worldPosf.z*10.0), 0.0,0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
+        gl_FragColor = finalColor + vec4(sin(tan(worldPosf.z*10.0 + worldPosf.x*3.0 + worldPosf.y*5.0)), 0.0,0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
         gl_FragColor.a *= 0.7;
 //        gl_FragColor.rgb *= pow(length(bary),10.0);
-        gl_FragColor.rgb *= mix(vec3(0.5), vec3(0.0), edgeFactor());
+        float blend = edgeFactor();
+        gl_FragColor.rgb *= mix(vec3(0.5), vec3(0.0), blend);
+        gl_FragColor.rgb *= brightness;
+        gl_FragColor.a = finalColor.r * 0.33 + finalColor.g * 0.33 + finalColor.b * 0.33;
+//        gl_FragColor.r = brightness;
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
 
