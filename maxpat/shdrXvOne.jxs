@@ -15,23 +15,27 @@
      <param name="brightness" type="float" default="1.0" />
      <param name="edgeWidth" type="float" default="1.0" />
      <param name="tex0" type="int" default="0" />
+     <param name="colorMathFactor" type="float" default="0"/>
      <language name="glsl" version="1.2">
 
      <bind param="vCircleFactor" program="vp"/>
      <bind param="vCircleFactor2" program="vp"/>
      <bind param="vNoiseFactor" program="vp"/>
+     <bind param="pitch" program="vp"/>
      <bind param="pitch" program="fp"/>
      <bind param="time" program="vp"/>
      <bind param="time" program="fp"/>
      <bind param="pad1" program="fp"/>
      <bind param="timeMultiplier" program="vp"/>
      <bind param="timeMultiplier" program="fp"/>
+     <bind param="pitchEffect" program="vp"/>
      <bind param="pitchEffect" program="fp"/>
      <bind param="colorMode" program="fp"/>
      <bind param="tex0" program="fp" />
      <bind param="texmode" program="fp" />
      <bind param="brightness" program="fp" />
      <bind param="edgeWidth" program="fp" />
+     <bind param="colorMathFactor" program="fp" />
      <program name="vp" type="vertex" >
 
 <![CDATA[
@@ -52,6 +56,9 @@ uniform float vCircleFactor2;
 uniform float vNoiseFactor;
 uniform float time;
 uniform float timeMultiplier;
+
+uniform vec2 pitch;
+uniform float pitchEffect;
 
 varying vec4 worldPos;
 
@@ -75,16 +82,22 @@ void main()
 
     vertpos.x += sin(tan(time*timeMultiplier+gl_MultiTexCoord0.y*10.0)) * vNoiseFactor * edgeX * (1.0 - cos( (gl_MultiTexCoord0.y-0.5) * 3.14));
 
-    vertpos.y += vCircleFactor2 * 0.5 * (1.0 - cos( (gl_MultiTexCoord0.x-0.5) * 3.14)) * edgeY;
+    vertpos.y += vCircleFactor2 * 0.5 * (1.0 - cos( (gl_MultiTexCoord0.x-0.5) * 3.14 * 100.0)) * edgeY;
 
     vertpos.y += cos(tan(time*timeMultiplier+gl_MultiTexCoord0.x*10.0)) * vNoiseFactor * edgeY * (1.0 - cos( (gl_MultiTexCoord0.x-0.5) * 3.14));
 
 
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.y-0.5) * 3.14);
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.x-0.5) * 3.14);
+
+
+
 //    vertpos.y *= 3.0 * sin(vertpos.z);
 
     gl_Position = gl_ModelViewProjectionMatrix * vertpos;
+    gl_Position.x += pitch.x * sin(tan(vertpos.y * 100.0)) * pitchEffect * 0.02;
+    gl_Position.y += pitch.x * cos(tan(vertpos.z * 100.0)) * pitchEffect * 0.02;
+    gl_Position.z += pitch.x * sin(tan(vertpos.x * 100.0)) * pitchEffect * 0.02;
 
     // transform texcoords
     texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
@@ -164,6 +177,7 @@ uniform float time;
 uniform float timeMultiplier;
 uniform float pad1;
 uniform float edgeWidth;
+uniform float colorMathFactor;
 
 const float PI = 3.1415927;
 
@@ -226,9 +240,9 @@ void main()
         }
 
         if (colorMode == 0)
-            finalColor.rg *= mix(1.0, pitch.x, pitchEffect);
+            finalColor.rg *= mix(1.0, pitch.x, pitchEffect * 0.6);
         else
-            finalColor.rb *= mix(1.0, pitch.x, pitchEffect);
+            finalColor.bg *= mix(1.0, pitch.x, pitchEffect * 0.6);
 
         float rgbsum = finalColor.r * 0.33 + finalColor.g * 0.33 + finalColor.b * 0.33;
         if (rgbsum < 0.05)
@@ -238,13 +252,15 @@ void main()
 
 
 
-        gl_FragColor = finalColor + vec4(sin(tan(worldPosf.z*10.0 + worldPosf.x*3.0 + worldPosf.y*5.0)), 0.0,0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
+        gl_FragColor = finalColor + colorMathFactor * vec4(sin(tan((worldPosf.z)*10.0 * worldPosf.x*3.0 + worldPosf.y*5.0 + (time*timeMultiplier)) * 0.06), 0.0, 0.0,1.0);// * sin(worldPos.y * 30.0 + time * timeMultiplier);
         gl_FragColor.a *= 0.7;
 //        gl_FragColor.rgb *= pow(length(bary),10.0);
         float blend = edgeFactor();
+    //    gl_FragColor.g *= 0.5;
         gl_FragColor.rgb *= mix(vec3(0.5), vec3(0.0), blend);
         gl_FragColor.rgb *= brightness;
         gl_FragColor.a = finalColor.r * 0.33 + finalColor.g * 0.33 + finalColor.b * 0.33;
+
 //        gl_FragColor.r = brightness;
         //     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
 //        gl_FragColor = texture2D(tex0, texcoord0);
