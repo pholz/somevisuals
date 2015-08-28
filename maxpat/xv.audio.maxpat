@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 124.0, 222.0, 1429.0, 852.0 ],
+		"rect" : [ 812.0, 134.0, 1429.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1037.0, 20.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -616,6 +629,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-117",
@@ -625,7 +639,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 660.0, 683.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "expr ($f1*0.1+$f2*0.9)"
+					"text" : "expr ($f1*0.2+$f2*0.8)"
 				}
 
 			}
@@ -1528,10 +1542,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 985.0, 14.0, 100.0, 40.0 ],
+					"patching_rect" : [ 991.0, 78.5, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-55", "number", "int", 1, 5, "obj-53", "toggle", "int", 1, 6, "obj-18", "gain~", "list", 105, 10.0, 5, "obj-14", "flonum", "float", 0.2, 5, "obj-17", "flonum", "float", 12.0, 5, "obj-23", "flonum", "float", 93.0 ]
+							"data" : [ 5, "obj-55", "number", "int", 1, 5, "obj-53", "toggle", "int", 1, 6, "obj-18", "gain~", "list", 120, 10.0, 5, "obj-14", "flonum", "float", 0.0, 5, "obj-17", "flonum", "float", 0.0, 5, "obj-23", "flonum", "float", 0.0, 5, "obj-35", "flonum", "float", 0.0, 5, "obj-34", "flonum", "float", 0.0, 5, "obj-13", "flonum", "float", 8.175799, 5, "obj-37", "flonum", "float", 891.961914, 5, "obj-36", "flonum", "float", 0.008337, 5, "obj-33", "flonum", "float", 1618.753296, 5, "obj-31", "flonum", "float", 0.00713, 5, "obj-30", "flonum", "float", 1794.519287, 5, "obj-29", "flonum", "float", 0.00539, 5, "obj-51", "toggle", "int", 1, 12, "obj-83", "multislider", "list", 0.781471, 0.177143, 0.013634, 0.008503, 0.069565, 0.038963, 0.022129, 0.017464, 5, "obj-107", "toggle", "int", 1, 5, "obj-106", "number", "int", 0, 5, "obj-130", "slider", "float", 16.0, 8, "obj-95", "multislider", "list", 0.0, 0.0, 0.0, 0.0, 8, "obj-94", "multislider", "list", 0, 0, 0, 0, 8, "obj-93", "multislider", "list", 20, 20, 20, 20, 6, "obj-80", "gain~", "list", 123, 10.0, 5, "obj-88", "toggle", "int", 0, 5, "obj-105", "number~", "list", 0.0 ]
 						}
 , 						{
 							"number" : 2,
@@ -1624,7 +1638,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 542.5, 315.0, 101.0, 36.0 ],
 					"style" : "",
-					"text" : "thresh 7.480315 20.078741"
+					"text" : "thresh 9.448819 20.866142"
 				}
 
 			}
@@ -1869,7 +1883,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 342317.65625, "ticks" ],
+						"originallength" : [ 926207.9375, "ticks" ],
 						"originaltempo" : 119.999992,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -1878,6 +1892,19 @@
 ,
 					"style" : "",
 					"text" : "sfplay~ 1 60000 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "speed",
+					"id" : "obj-86",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 303.0, 97.0, 150.0, 22.0 ],
+					"style" : ""
 				}
 
 			}
@@ -2149,6 +2176,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -2813,6 +2849,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-86", 0 ]
 				}
 
 			}
