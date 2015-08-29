@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 218.0, 486.0, 640.0, 480.0 ],
+		"rect" : [ 269.0, 392.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -166,20 +166,21 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 144.0, 358.0, 54.0, 36.0 ],
 					"style" : "",
-					"text" : "metropolis.dae"
+					"text" : "plane3.dae"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-29",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.0, 156.0, 243.0, 22.0 ],
+					"patching_rect" : [ 321.0, 131.0, 240.0, 36.0 ],
 					"style" : "",
-					"text" : "0 tree2.dae, 1 plane2.dae, 2 metropolis.dae"
+					"text" : "0 plane_hi.obj, 1 tree2.dae, 2 skull2.dae, 3 metropolis.dae"
 				}
 
 			}
@@ -203,9 +204,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 180.0, 333.0, 22.0 ],
+					"patching_rect" : [ 52.0, 180.0, 399.0, 22.0 ],
 					"style" : "",
-					"text" : "0 metropolis.dae, 1 grubtex2.dae, 2 plane2.dae, 3 skull2.dae"
+					"text" : "0 plane_hi.obj, 1 tree2.dae, 2 grubtex.dae, 3 skull2.dae, 4 metropolis.dae"
 				}
 
 			}

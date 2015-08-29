@@ -1,0 +1,45 @@
+<jittershader name="voidness">
+     <description>
+     voidness
+     </description>
+     <param name="filters" type="vec4" default="0.5 0.5 0.5 0.5"/>
+     <param name="size" type="float" default="0.01"/>
+     <param name="resolution" type="vec2" default="1.0 1.0" />
+     <language name="glsl" version="1.0">
+     <bind param="filters" program="fp"/>
+     <bind param="size" program="fp"/>
+     <bind param="resolution" program="fp" />
+     <program name="vp" type="vertex" source="sh.passthru.xform.vp.glsl" />
+     <program name="fp" type="fragment">
+
+     <![CDATA[
+
+float sqpos[4];
+//float passed[4];
+
+void main(void)
+{
+    const float rad = 1000.0;
+    float sz = size * size * size;
+    vec2 centerAt = vec2(sin(filters.x * 3.14 * 2.0) * resolution.x/20.0 + resolution.x/2.0,
+                         cos(filters.x * 3.14 * 2.0) * resolution.y/20.0 + resolution.y/2.0);
+
+    gl_FragColor = vec4(1.0);
+
+    float dist = rad * sz;
+
+    if (distance(gl_FragCoord.xy, centerAt) < dist)
+    {
+        gl_FragColor.xyz = vec3(0.0);
+    }
+    else if (distance(gl_FragCoord.xy, centerAt) < dist + dist * filters.y)
+    {
+        gl_FragColor.xyz = vec3( (distance(gl_FragCoord.xy, centerAt) - dist) / (dist * filters.y + 0.01));
+    }
+
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>
