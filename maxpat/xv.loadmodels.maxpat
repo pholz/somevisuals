@@ -166,7 +166,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 144.0, 358.0, 54.0, 36.0 ],
 					"style" : "",
-					"text" : "plane2.dae"
+					"text" : "metropolis.dae"
 				}
 
 			}
@@ -203,9 +203,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 161.0, 239.0, 22.0 ],
+					"patching_rect" : [ 55.0, 161.0, 262.0, 22.0 ],
 					"style" : "",
-					"text" : "0 metropolis.dae, 1 grub.dae, 2 plane2.dae"
+					"text" : "0 metropolis.dae, 1 grubtex2.dae, 2 plane2.dae"
 				}
 
 			}
