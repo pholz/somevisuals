@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 193.0, 334.0, 1370.0, 539.0 ],
+		"rect" : [ 193.0, 334.0, 1370.0, 580.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -708,7 +708,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 59.0, 262.0, 57.0, 22.0 ],
+					"patching_rect" : [ 36.0, 255.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "s ak_clip"
 				}

@@ -203,9 +203,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.0, 161.0, 262.0, 22.0 ],
+					"patching_rect" : [ 51.0, 180.0, 333.0, 22.0 ],
 					"style" : "",
-					"text" : "0 metropolis.dae, 1 grubtex2.dae, 2 plane2.dae"
+					"text" : "0 metropolis.dae, 1 grubtex2.dae, 2 plane2.dae, 3 skull2.dae"
 				}
 
 			}

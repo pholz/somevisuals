@@ -189,11 +189,13 @@ void main()
 
         vec4 finalColor = vec4(1.0, 1.0, 1.0, 1.0);
 
+
+
         if (texmode > 0)
         {
                 if (texmode == 1) // linear
                 {
-                    finalColor = texture2D(tex0, texcoord0f.xy * vec2(0.16, 1.0));// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
+                    finalColor = texture2D(tex0, /*texcoord0f.xy*/ vec2(0.0,0.0) * vec2(0.16, 1.0));// * pitch.x;// + vec4(0.0, 0.5, 0.0, 1.0);
                         finalColor = min(finalColor, vec4(1.0, 1.0, 1.0, 1.0));
                         //  finalColor = finalColor * pow( 2.0*(0.9 - abs(texcoord0.y - 0.5)), 3.0);
                 }

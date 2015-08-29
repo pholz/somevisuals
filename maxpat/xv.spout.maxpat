@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 386.0, 119.0, 1073.0, 865.0 ],
+		"rect" : [ 846.0, 498.0, 1073.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 720.0, 704.0, 100.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.0, 1.0, 1.0, 1.0 ],
 					"fontname" : "Arial",
@@ -395,7 +407,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 461.0, 364.0, 64.0, 77.0 ],
 									"style" : "",
-									"text" : "rotateto 0.024734 0. 0. 0.999694 0.5"
+									"text" : "rotateto 0. 0.074143 -0. -0.997248 0.5"
 								}
 
 							}

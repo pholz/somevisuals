@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 552.0, 120.0, 1429.0, 936.0 ],
+		"rect" : [ 413.0, 123.0, 1429.0, 936.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 790.0, 491.0, 203.0, 22.0 ],
 					"style" : "",
-					"text" : "0. 0."
+					"text" : "0.66177 0.54579"
 				}
 
 			}
@@ -1832,14 +1832,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-16",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.5, 315.0, 67.0, 50.0 ],
+					"patching_rect" : [ 542.5, 315.0, 67.0, 36.0 ],
 					"style" : "",
-					"text" : "thresh 40.551182 0."
+					"text" : "thresh 39.37 0."
 				}
 
 			}
