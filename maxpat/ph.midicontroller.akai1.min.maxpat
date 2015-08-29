@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 89.0, 521.0, 1370.0, 539.0 ],
+		"rect" : [ 193.0, 334.0, 1370.0, 539.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -708,7 +708,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 59.0, 277.0, 57.0, 22.0 ],
+					"patching_rect" : [ 59.0, 262.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "s ak_clip"
 				}
@@ -1114,7 +1114,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 59.0, 148.0, 38.0, 23.0 ],
+					"patching_rect" : [ 50.0, 148.0, 38.0, 23.0 ],
 					"style" : ""
 				}
 

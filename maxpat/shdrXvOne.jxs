@@ -66,15 +66,9 @@ void main()
 {
     // perform standard transform on vertex
 
-//    gl_Position.x *= sin(gl_MultiTexCoord0.y);
-
     vec4 vertpos = gl_Vertex;
     worldPos = vertpos;
     vec4 tformed = gl_ModelViewProjectionMatrix * gl_Vertex;
-
-    //  vertpos.z += vNoiseFactor * sin(gl_MultiTexCoord0.y*6.0)*sin(tan(gl_MultiTexCoord0.y * 1000.0));
-    //  vertpos.x += vNoiseFactor * 0.01 * tan(gl_MultiTexCoord0.y*10.3*tformed.z)*sin(tan(tformed.y*gl_MultiTexCoord0.y * 1000.0));
-//    vertpos.xy += (vertpos.xy- vNoiseFactor * distance(gl_MultiTexCoord0.xy, vec2(0.5,0.5)) * sin(tformed.x*tformed.y);
 
     float edgeX = -(gl_MultiTexCoord0.x * 2.0 - 1.0);
     float edgeY = -(gl_MultiTexCoord0.y * 2.0 - 1.0);
@@ -89,10 +83,6 @@ void main()
 
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.y-0.5) * 3.14);
     vertpos.z += vCircleFactor * 0.5 * cos( (gl_MultiTexCoord0.x-0.5) * 3.14);
-
-
-
-//    vertpos.y *= 3.0 * sin(vertpos.z);
 
     gl_Position = gl_ModelViewProjectionMatrix * vertpos;
     gl_Position.x += pitch.x * sin(tan(vertpos.y * 100.0)) * pitchEffect * 0.02;
